@@ -10,7 +10,16 @@ $(document).ready(function(){
                     dots: true,
                     arrows: false
                 }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    dots: true,
+                    arrows: false,
+                }
             }
+            
         ]
     });
-  });
+  }); 
+
