@@ -183,6 +183,7 @@
             &__text {
                 margin-top: 15px;
                 font-size: 17px;
+                text-align: left;
             }
         }
     }
@@ -222,6 +223,48 @@
                 display: none;
             }
             
+        }
+    }
+
+    .catalog {
+        padding-bottom: 50px;
+        &__tabs {
+            margin-top: 40px;
+        }
+        &__tab {
+            width: 95px;
+            height: 45px;
+            font-size: 10px;
+        }
+        &__content {
+            margin-top: 30px;
+        }
+    }
+
+    .reviews {
+        &__item {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+            img {
+                width: 130px;
+                height: 130px;
+            }
+
+            &__text {
+                &__header {
+                    margin-top: 30px;
+                    font-size: 20px;
+                }
+                &__subheader {
+                    font-size: 16px;
+                    margin-top: 5px;
+                }
+                &__descr {
+                    font-size: 17px;
+                }
+            }
         }
     }
 }
