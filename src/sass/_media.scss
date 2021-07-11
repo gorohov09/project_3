@@ -108,7 +108,7 @@
     }
 
     .promo {
-        min-height: 420px;
+        min-height: 400px;
         padding: 16px 0 30px 0;
         .header {
             display: flex;
@@ -125,7 +125,7 @@
             }
 
             &__phone {
-                font-size: 13px;
+                font-size: 12px;
             }
             
             .button {
@@ -143,7 +143,7 @@
 
         &__header {
             text-align: center;
-            font-size: 35px;
+            font-size: 30px;
         }
         &__subheader {
             text-align: center;
@@ -167,12 +167,15 @@
     }
 
     .advantages {
-        padding: 40px 0 40px 0;
+        padding: 40px 0 20px 0;
         &__icons {
             display: flex;
             flex-direction: column;
             align-items: center;
             margin-top: 35px;
+        }
+        &__header {
+            font-size: 20px;
         }
         &__icon {
             margin-bottom: 25px;
@@ -189,16 +192,17 @@
     }
 
     .consultation {
-        min-height: 680px;
-        padding: 40px 0 40px 0;
+        min-height: 560px;
+        padding: 20px 0 20px 0;
         .title_left {
-            font-size: 31px;
+            font-size: 20px;
             line-height: 42px;
         }
         &__descr {
             font-size: 18px;
         }
         .feed-form {
+            margin-top: 25px;
             width: 270px;
             input {
                 height: 50px;
@@ -227,7 +231,10 @@
     }
 
     .catalog {
-        padding-bottom: 50px;
+        padding-bottom: 20px;
+        .title {
+            font-size: 20px;
+        }
         &__tabs {
             margin-top: 40px;
         }
@@ -239,9 +246,23 @@
         &__content {
             margin-top: 30px;
         }
+        &-item {
+            min-height: 400px;
+            &__img {
+                height: 120px;
+            }
+            hr {
+                margin-top: 0px;
+                margin-bottom: 10px;
+            }
+        }
     }
 
     .reviews {
+        padding-bottom: 30px;
+        .title {
+            font-size: 20px;
+        }
         &__item {
             flex-direction: column;
             justify-content: space-between;
@@ -255,22 +276,72 @@
             &__text {
                 &__header {
                     margin-top: 30px;
-                    font-size: 20px;
+                    font-size: 17px;
                 }
                 &__subheader {
-                    font-size: 16px;
+                    font-size: 13px;
                     margin-top: 5px;
                 }
                 &__descr {
-                    font-size: 17px;
+                    font-size: 14px;
                 }
             }
         }
+    }
+    .footer {
+        min-height: 270px;
+        &__map{
+            display: none;
+        }
+        &__info {
+            width: 100%;
+        }
+        &__social-item {
+            margin: 0px 5px;
+        }
+    }
+
+    .modal {
+        min-height: 365px;
+        width: 280px;
+        padding: 25px 23px 25px 28px;
+        &__subtitle {
+            font-size: 18px;
+        }
+        &__descr {
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+        &__close {
+            font-size: 30px;
+            right: -22px;
+        }
+        .error {
+            font-size: 14px;
+        }
+    }
+
+    .feed-form {
+        &_mt25{
+            width: 200px;
+            margin: 0 auto;
+            input {
+                height: 47px;
+            }
+        }
+    } 
+
+    .button_submit {
+        margin: 0 auto;
+        height: 46px;
+        width: 80%;
+        font-size: 13px;
+        
     }
 }
 
 @media (max-width: 325px) {
     .container {
-        max-width: 300px;
+        max-width: 291px;
     }
 }

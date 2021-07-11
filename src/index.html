@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pulse</title>
+    <link rel="shortcut icon" href="icons/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet"  href="css/slick.css"/> 
+    <link rel="stylesheet"  href="css/slick.css"/>
+    <link rel="stylesheet" href="css/animate.css"> 
     <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -52,7 +55,7 @@
                 <button data-modal="consultation" class="button button_main">заказать консультацию</button>
                 <div class="promo__link">
                     или
-                    <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
+                    <a href="#catalog">ПЕРЕЙТИ В КАТАЛОГ</a>
                 </div>
             </div>    
         </div>
@@ -70,7 +73,7 @@
                 </div>
 
                 <div class="advantages__icon">
-                    <img src="icons/adv_heart.png" alt="heart">
+                    <img src="icons/adv_heart.png" alt="heart" class="advantages__icon advantages__icon_animated">
                     <div class="advantages__icon__subheader">Заботимся о здоровье</div>
                     <div class="advantages__icon__text">Мы работаем для того,<br>чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!</div>
                 </div>
@@ -95,10 +98,10 @@
             </div>
             <form id="consultation-form" class="feed-form" action="#">
                 <input name="name" required placeholder="Ваше ФИО" type="text">
-                <input name="phone" required placeholder="Ваш телефон" type="number">
+                <input name="phone" required placeholder="Ваш телефон">
                 <input name="email" required placeholder="Ваш E-mail" type="email">
 
-                <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
+                <button class="button button_submitr">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
         </div>
     </section> 
@@ -119,7 +122,7 @@
         </div>
     </section>
 
-    <section class="catalog">
+    <section class="catalog" id="catalog">
         <div class="container">
             <h2 class="title">Каталог пульсометров</h2>
             <ul class="catalog__tabs">
@@ -129,7 +132,7 @@
             </ul>
 
             <div class="catalog__content catalog__content_active">
-                <div class="catalog-item">
+                <div class="catalog-item animate__animated animate__flipInY wow data-wow-duration="2s" data-wow-delay="1s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/polar_3.jpg" alt="puls" class="catalog-item__img">
@@ -154,7 +157,7 @@
                         <button class="button button_mini">КУПИТЬ</button>
                     </div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item animate__animated animate__flipInY wow data-wow-duration="2s" data-wow-delay="1s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/puls.png" alt="puls" class="catalog-item__img">
@@ -179,7 +182,7 @@
                         <button class="button button_mini">КУПИТЬ</button>
                     </div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item animate__animated animate__flipInY wow data-wow-duration="2s" data-wow-delay="1s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/polar_1.jpg" alt="puls" class="catalog-item__img">
@@ -204,7 +207,7 @@
                         <button class="button button_mini">КУПИТЬ</button>
                     </div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item animate__animated animate__flipInY wow data-wow-duration="2s" data-wow-delay="1s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/polar_2.jpg" alt="puls" class="catalog-item__img">
@@ -229,7 +232,7 @@
                         <button class="button button_mini">КУПИТЬ</button>
                     </div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item animate__animated animate__flipInY wow data-wow-duration="2s" data-wow-delay="1s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/polar_4.jpg" alt="puls" class="catalog-item__img">
@@ -254,7 +257,7 @@
                         <button class="button button_mini">КУПИТЬ</button>
                     </div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item animate__animated animate__flipInY wow data-wow-duration="2s" data-wow-delay="1s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/polar_8.jpg" alt="puls" class="catalog-item__img">
@@ -282,7 +285,7 @@
                 
             </div>
             <div class="catalog__content">
-                <div class="catalog-item">
+                <div class="catalog-item animate__animated animate__flipInY wow data-wow-duration="2s" data-wow-delay="1s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/polar_5.jpg" alt="puls" class="catalog-item__img">
@@ -309,7 +312,7 @@
                 </div>
             </div>
             <div class="catalog__content">
-                <div class="catalog-item">
+                <div class="catalog-item animate__animated animate__flipInY wow data-wow-duration="2s" data-wow-delay="1s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/polar_6.jpg" alt="puls" class="catalog-item__img">
@@ -334,7 +337,7 @@
                         <button class="button button_mini">КУПИТЬ</button>
                     </div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item animate__animated animate__flipInY wow data-wow-duration="2s" data-wow-delay="1s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/polar_7.jpg" alt="puls" class="catalog-item__img">
@@ -367,7 +370,7 @@
         <div class="container">
             <h2 class="title">отзывы клиентов</h2>
             <div class="reviews__wrapper">
-                <div class="reviews__item">
+                <div class="reviews__item animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
                     <img src="img/rev_1.png" alt="rev">
                     <div class="reviews__item__text">
                         <div class="reviews__item__text__header">Ирина Иванченко </div>
@@ -376,7 +379,7 @@
                             Спасибо, RunSmart! </div>
                     </div>
                 </div>
-                <div class="reviews__item">
+                <div class="reviews__item animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
                     <img src="img/rev_2.png" alt="rev">
                     <div class="reviews__item__text">
                         <div class="reviews__item__text__header">Иван Сёмочкин</div>
@@ -384,7 +387,7 @@
                         <div class="reviews__item__text__descr">Крутая штука-пульсометр. Обычно без них бегал. Оказывается только хуже себе делал. <br><br>Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели первую тренировку, научили пользоваться новым гаджетом. Также объяснили основы анатомии, составили план тренировок на месяц вперёд.<br><br>С ними подготовился к своему первому полумарафону! Спасибо!!!</div>
                     </div>
                 </div>
-                <div class="reviews__item">
+                <div class="reviews__item animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
                     <img src="img/rev_3.png" alt="rev">
                     <div class="reviews__item__text">
                         <div class="reviews__item__text__header">Юлия Дашкина</div>
@@ -397,7 +400,9 @@
     </section>
 
     <footer class="footer">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5338.333487851583!2d37.644940414665285!3d55.7673134600397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCAxMDcwNzg!5e0!3m2!1sru!2sru!4v1625346098432!5m2!1sru!2sru" width="100%" height="630" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="footer__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5338.333487851583!2d37.644940414665285!3d55.7673134600397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCAxMDcwNzg!5e0!3m2!1sru!2sru!4v1625346098432!5m2!1sru!2sru" width="100%" height="630" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
         <div class="footer__info">
             <address class="footer__addr">Москва, Мясницкий проезд, д.3с1</address>
             <a class="footer__phone" href="tel:84999228974">8 (499) 922-89-74</a>
@@ -407,7 +412,7 @@
                 <a class="footer__social-item" href="#"><img src="icons/pinterest.svg" alt="pinterest"></a>
             </div>
         </div>
-    </footer>
+    </footer> 
 
     <div class="overlay">
         <div class="modal" id="consultation">
@@ -416,7 +421,7 @@
             <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
             <form class="feed-form feed-form_mt25" action="#">
                 <input name="name" placeholder="Ваше ФИО" type="text">
-                <input name="phone" placeholder="Ваш телефон" type="number">
+                <input name="phone" placeholder="Ваш телефон">
                 <input name="email" placeholder="Ваш E-mail" type="email">
 
                 <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
@@ -429,7 +434,7 @@
             <div class="modal__descr">Пульсометр Polar FT1</div>
             <form class="feed-form feed-form_mt25" action="#">
                 <input name="name" required placeholder="Ваше ФИО" type="text">
-                <input name="phone" required placeholder="Ваш телефон" type="number">
+                <input name="phone" required placeholder="Ваш телефон">
                 <input name="email" required placeholder="Ваш E-mail" type="email">
 
                 <button class="button button_submit">купить</button>
@@ -444,11 +449,19 @@
         </div>
     </div>
 
+    <a href="#up" class="pageup">
+        <img src="icons/up_shevr.svg" alt="up">
+
+    </a>
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script> 
-    <script src="js/script.js"></script>  
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/script.js"></script>
+    
 
 </body>
 </html>
